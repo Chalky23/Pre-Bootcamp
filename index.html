@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirBnB</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="navigator">
@@ -13,56 +14,68 @@
         
             <input type="image" src="./images/filters.png" alt="filters" width="48" height="48">
             
-            <div class="categories">
-                <input type="image" src="./images/beachfront.png" alt="beachfront" >
-                <input type="image" src="./images/historical-homes.png" alt="historical-homes" >
-                <input type="image" src="./images/amazing-pools.png" alt="amazing-pools" >
-                <input type="image" src="./images/containers.png" alt="containers" >
-                <input type="image" src="./images/b-and-bs.png" alt="b-and-bs" >
-            </div>
+           <div class="categories-img">
+                <ul> 
+                  <li id="beachfront"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A789"><img src="images/beachfront.png" alt="beachfront"></a></li>
+                  <li id="historical-homes"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8524"><img src="images/historical-homes.png" alt="historical homes"></a></li>
+                  <li id="amazing-pools"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&category_tag=Tag%3A677&search_type=category_change"><img src="images/amazing-pools.png" alt="amazing pools"></a></li>
+                  <li id="containers"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8157"><img src="images/containers.png" alt="containers"></a></li>
+                  <li id="b-and-bs"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8538"><img src="images/b-and-bs.png" alt="bed and breakfasts"></a></li>
+                </ul> 
+              </div>
+
+            <br>
+
+            <div class="categories-text">
+                <ul> 
+                  <li id="beachfront"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A789">Beachfront</a></li>
+                  <li id="historical-homes"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8524">Historical homes</a></li>
+                  <li id="amazing-pools"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&category_tag=Tag%3A677&search_type=category_change">Amazing pools</a></li>
+                  <li id="containers"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8157">Containers</a></li>
+                  <li id="b-and-bs"><a href="https://www.airbnb.co.uk/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=2&channel=EXPLORE&search_type=category_change&price_filter_num_nights=5&category_tag=Tag%3A8538">Bed and breakfast</a></li>
+                </ul> 
+              </div>
+            
         </form>
     </section>
 
     <section class="listings">   <!.. image, tagline, favourite-button, description, rating ..>
          <div class="listing-1">
-         <img src="images/listing-1-img-1.webp" alt="listing-1">
-            Guest favourite
-            <p><img src="images/rating-star.png" alt="star" style="float:left;width:20px;height:20px"> 4.9</p>
-            <p>Melksham, UK</p>             <!.. location ..>
-            <p>Urban Lofts - Butler.         <!.. listing title ..>
+         <img src="images/listing-1-img-1.webp" alt="listing-1" class="images" id="img1">
+            <p>Guest favourite <img src="images/rating-star.png" alt="star" id="star"> 4.9</p>
+            <p class="location">Melksham, UK</p>             <!.. location ..>
+            <p class="descriptor">Urban Lofts - Butler.         <!.. listing title ..>
             18-23 Mar</p>                   <!.. date range ..>
-            <p>£800 total</p>               <!.. price ..>
+            <p class="price">£800 total</p>               <!.. price ..>
          </div>
 
          <div class="listing-2">
-            <img src="images/listing-2-img-1.webp" alt="listing-2">
-               Superhost
-               <p><img src="images/rating-star.png" alt="star" style="float:left;width:20px;height:20px"> 4.8</p>
-               <p>Bath, UK</p>                             <!.. location ..>
-               <p>Luxury penthouse apartment with hot tub  <!.. listing title ..>
+            <img src="images/listing-2-img-1.webp" alt="listing-2" class="images" id="img2">
+               <p>Superhost <img src="images/rating-star.png" alt="star" id="star"> 4.8</p>
+               <p class="location">Bath, UK </p>                             <!.. location ..>
+               <p class="descriptor">Luxury penthouse apartment with hot tub  <!.. listing title ..>
                19-25 Feb</p>                               <!.. date range ..>
-               <p>£1986 total</p>                          <!.. price ..>
+               <p class="price">£1986 total</p>                          <!.. price ..>
             </div>
 
             <div class="listing-3">
-                <img src="images/listing-3-img-1.webp" alt="listing-3">
-                   Guest favourite
-                   <p><img src="images/rating-star.png" alt="star" style="float:left;width:20px;height:20px"> 5.0</p>
-                   <p>Bradford-on-Avon, UK</p>     <!.. location ..>
-                   <p>Town Centre Georgian Lodge   <!.. listing title ..>
+                <img src="images/listing-3-img-1.webp" alt="listing-3" class="images" id="img3">
+                   <p>Guest favourite <img src="images/rating-star.png" alt="star" id="star"> 5.0</p>
+                   <p class="location">Bradford-on-Avon, UK</p>     <!.. location ..>
+                   <p class="descriptor">Town Centre Georgian Lodge   <!.. listing title ..>
                    8-10 Mar</p>                    <!.. date range ..>
-                   <p>£230 total</p>               <!.. price ..>
+                   <p class="price">£230 total</p>               <!.. price ..>
                 </div>
     </section>
 
+      <p id="continue"> Continue exploring amazing views</p>
+        <div id="show-more">Show more</div>
+
     <section class="suggestions">
         
-        <p> Continue exploring amazing views</p>
-        <div>Show more</div>
-        
-        <h2>Inspiration for future getaways</h2>
-        <div>Popular Historic Coastal Island City Romantic</div> <!.. scrollable menu for suggestions ..>
-        
+        <h2 class="location-suggestions">Inspiration for future getaways</h2>
+        <div class="location-suggestions">Popular Historic Coastal Island City Romantic</div> <!.. scrollable menu for suggestions ..>
+        <br>
         <div class="location-suggestions">
             <b>Aberfeldy</b> Holiday rentals
             <b>Amsterdam</b> House rentals

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: AirBnBCereal;
+    src: url(fonts/AirbnbCereal_W_XBd.otf);
+}
+.navigator {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]{
+    font-family: AirBnBCereal;
+    width: 75%;
+    height: 48px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 2px 5px 5px rgb(240, 240, 240);
+    border-radius: 25px;
+    border-color: grey;
+    position: static;
+}   
+
+input[type=image]{
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+::placeholder {
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+
+ul {
+    top: 10px;
+    list-style-type: none;
+    color: grey;    
+}
+
+li {
+    display: inline;
+    overflow: scroll;    
+}
+
+li a{
+    color: grey;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: black;
+  }
+
+.categories-text {
+    font-family: AirBnBCereal;
+}
+
+.listings {
+    font-family: AirBnBCereal;
+}
+
+.listings p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.price {
+    text-decoration: underline;
+} 
+
+.listings {
+    display: grid;
+    height: 75%
+}
+
+.images {
+    display: block;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto; 
+    border-radius: 25px;
+}
+
+#star{
+    float:right;
+    width:20px;
+    height:20px
+}
+
+
+#continue {
+    text-align: center;
+    font-size: 30px;
+    font-family: AirBnBCereal;
+}
+
+#show-more{
+    text-align: center;
+    font-family: AirBnBCereal;
+    padding: 30px;
+    border: black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.suggestions {
+    font-family: AirBnBCereal;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(200, 200, 200)
+}
+
+.location-suggestions {
+    column-count: 2;
+    column-gap: 50 px;
+}
